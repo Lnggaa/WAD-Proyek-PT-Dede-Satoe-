@@ -12,12 +12,4 @@ Setup Frontend
 2. `tsc app.ts` (compile ke app.js)
 3. Buka `public/index.html` di browser.
 
-API Endpoints
-- GET /api/reviews: Dapatkan list review
-- POST /api/reviews: Submit review baru (body: {name: string, rating: number, comment: string})
 
-Deploy
-- Backend: Vercel/Netlify (serverless) atau Heroku.
-- Frontend: GitHub Pages.
-
-Kontribusi: Pull request welcome!
