@@ -1,37 +1,23 @@
-🌶️ Sambel Dede Satoe - Review System
 
-Sistem review dan testimoni pelanggan untuk produk Sambel Dede Satoe.
 
-✨ Fitur
+Sambel Dede Satoe - Review System
+Proyek sederhana untuk fitur testimoni & review pada website sambel.
 
-- ⭐ Rating bintang interaktif
-- 💬 Komentar dan testimoni
-- 🔍 Filter berdasarkan rating
-- 📊 Statistik rating real-time
-- 👍 Like untuk review membantu
-- 📱 Responsive design
-- 💾 Persistent storage
+Setup Backend
+1. `npm install express cors`
+2. `node server.js` (run di port 3000)
 
-🚀 Teknologi
+Setup Frontend
+1. `npm install -g typescript`
+2. `tsc app.ts` (compile ke app.js)
+3. Buka `public/index.html` di browser.
 
-- React 18
-- TypeScript
-- Tailwind CSS
-- Lucide Icons
-- Storage API
+API Endpoints
+- GET /api/reviews: Dapatkan list review
+- POST /api/reviews: Submit review baru (body: {name: string, rating: number, comment: string})
 
-📦 Instalasi
-```bash
-git clone https://github.com/yourusername/sambel-review-system.git
-cd sambel-review-system
-npm install
-npm start
-```
+Deploy
+- Backend: Vercel/Netlify (serverless) atau Heroku.
+- Frontend: GitHub Pages.
 
-🛠️ Development
-```bash
-npm run dev      # Run development server
-npm run build    # Build for production
-npm run lint     # Run ESLint
-```
-
+Kontribusi: Pull request welcome!
