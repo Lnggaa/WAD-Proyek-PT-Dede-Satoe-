@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Testimoni & Review - Sambel Dede Satoe</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>Sambel Dede Satoe Indonesia</h1>
+        <p>Bagikan pengalaman Anda dengan sambal khas Surabaya kami!</p>
+      </header>
+
+      <div class="review-card">
+        <h2>Kirim Testimoni Anda</h2>
+        <form id="reviewForm">
+          <input
+            type="text"
+            id="name"
+            placeholder="Nama Anda"
+            required
+            minlength="2"
+          />
+
+          <select id="rating" required>
+            <option value="" disabled selected>
+              Pilih Rating (1-5 Bintang)
+            </option>
+            <option value="1">1 ⭐</option>
+            <option value="2">2 ⭐⭐</option>
+            <option value="3">3 ⭐⭐⭐</option>
+            <option value="4">4 ⭐⭐⭐⭐</option>
+            <option value="5">5 ⭐⭐⭐⭐⭐</option>
+          </select>
+
+          <textarea
+            id="review"
+            placeholder="Ceritakan pengalaman Anda (min 10 huruf)..."
+            required
+            minlength="10"
+          ></textarea>
+
+          <button type="submit">Kirim Review</button>
+        </form>
+      </div>
+
+      <div class="testimonials">
+        <h2>Testimoni Pelanggan</h2>
+        <div class="empty-state">
+          Belum ada testimoni. Jadilah yang pertama! 🌶️
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
